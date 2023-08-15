@@ -1,4 +1,4 @@
-# ME_THESIS_WORK_SD
+# Abstract
 Abstractive text summarization entails producing summaries that encompass the essential
 concepts present in the original text. Unlike extractive summarization, abstractive summarization
 can include new expressions and sentences absent from the original text. This thesis  entitled **“Analysis of Abstractive Summarization Using Salience Allocation”** presents a comprehensive analysis of abstractive summarization using the salience allocation
