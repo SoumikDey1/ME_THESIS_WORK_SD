@@ -23,3 +23,6 @@ This study sheds light on SEASON’s potential as a novel summarization model. I
 awareness of the benefits and restrictions of different models in salience allocation. The
 findings contribute to advancing the field of abstractive summarization and provide valuable
 guidance for future research endeavors.
+
+# Dataset Used
+Due to limited computational resources, a small portion of the dataset has been used for our experiment. Here, we have taken 10,000 training data, 1000 validation data, and 1000 testing data from the CNN/Dailymail dataset. In this study, Version 3.0.0 of the dataset was utilized, which is suitable for training models for both abstractive and extractive summarization tasks. We have also taken 5000 training data, 625 validation data, and 625 testing data from the SAMSum dataset.
