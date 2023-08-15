@@ -24,4 +24,21 @@ findings contribute to advancing the field of abstractive summarization and prov
 guidance for future research endeavors.
 
 # Dataset Used
-Due to limited computational resources, a small portion of the dataset has been used for our experiment. Here, we have taken 10,000 training data, 1000 validation data, and 1000 testing data from the CNN/Dailymail dataset. In this study, Version 3.0.0 of the dataset was utilized, which is suitable for training models for both abstractive and extractive summarization tasks. We have also taken 5000 training data, 625 validation data, and 625 testing data from the SAMSum dataset.
+Due to limited computational resources, a small portion of the dataset has been used for our experiment. Here, we have taken 10,000 training data, 1000 validation data, and 1000 testing data from the CNN/Dailymail dataset. This study utilized Version 3.0.0 of the dataset, which is suitable for training models for both abstractive and extractive summarization tasks. We have also taken 5000 training data, 625 validation data, and 625 testing data from the SAMSum dataset.
+
+# Implementation Details
+For fine-tuning the BART, PEGASUS, and ProphetNet, we take the pre-trained _facebook/bart-large-cnn_ model, 
+_google/pegasus-cnn_dailymail_ model, and _microsoft/prophetnet-large-uncased_ model from
+the hugging face website. For the SEASON model, we fine-tune the pre-trained _facebook/bart-large-cnn_ model. In
+the process of preparing the training data, we introduce a unique token before starting every
+sentence and computing its representation. Additionally, we limit the length of each
+input sequence in the CNN/Dailymail and SAMsum datasets to 1024 and 512 tokens, respectively,
+including special tokens. To maintain the essence of the reference summaries
+in both datasets, we shorten them to 128 tokens, ensuring that over 99% of the summaries
+remain intact. For measuring salience, we experiment with using ROUGE-L F1. During
+inference, we utilize predicted soft estimation to allocate expected salience, employing a
+temperature of 0.5 to sharpen the probability of salience degree. Our approach for inference
+involves using beam search, where the beam width is set to 5, applying a length penalty set to
+1.5, and implementing 3-gram blocking. We have conducted training for each of the models
+(SEASON, BART, PEGASUS, and ProphetNet) throughout 10 epochs, employing a portion
+of the CNN/Dailymail and SAMsum datasets.
