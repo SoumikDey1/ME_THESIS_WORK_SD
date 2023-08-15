@@ -32,7 +32,7 @@ _google/pegasus-cnn_dailymail_ model, and _microsoft/prophetnet-large-uncased_ m
 the hugging face website. For the SEASON model, we fine-tune the pre-trained _facebook/bart-large-cnn_ model. In
 the process of preparing the training data, we introduce a unique token before starting every
 sentence and computing its representation. Additionally, we limit the length of each
-input sequence in the CNN/Dailymail and SAMsum datasets to 1024 and 512 tokens, respectively,
+input sequence in the CNN/Dailymail and SAMSum datasets to 1024 and 512 tokens, respectively,
 including special tokens. To maintain the essence of the reference summaries
 in both datasets, we shorten them to 128 tokens, ensuring that over 99% of the summaries
 remain intact. For measuring salience, we experiment with using ROUGE-L F1. During
@@ -41,4 +41,4 @@ temperature of 0.5 to sharpen the probability of salience degree. Our approach f
 involves using beam search, where the beam width is set to 5, applying a length penalty set to
 1.5, and implementing 3-gram blocking. We have conducted training for each of the models
 (SEASON, BART, PEGASUS, and ProphetNet) throughout 10 epochs, employing a portion
-of the CNN/Dailymail and SAMsum datasets.
+of the CNN/Dailymail and SAMSum datasets.
