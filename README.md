@@ -14,10 +14,11 @@ is on measuring the quality and effectiveness of the generated summaries, consid
 ability to capture essential information and produce concise and coherent summaries.
 
 The CNN/Dailymail and SAMSum datasets are used to conduct this study. In the study,
-the performance of these models in text summarization is assessed using a range of evaluation
+the performance of these models in text and dialogue summarization is assessed using a range of evaluation
 metrics. These metrics include ROUGE, METEOR, MoverScore, and BERTScore.
 Analyzing the evaluation results enables a comprehensive comparison of the strengths and
 weaknesses exhibited by each model.
+
 This study sheds light on SEASON’s potential as a novel summarization model. It provides
 awareness of the benefits and restrictions of different models in salience allocation. The
 findings contribute to advancing the field of abstractive summarization and provide valuable
