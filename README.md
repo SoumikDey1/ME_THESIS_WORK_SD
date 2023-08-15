@@ -1,8 +1,7 @@
 # ME_THESIS_WORK_SD
 Abstractive text summarization entails producing summaries that encompass the essential
 concepts present in the original text. Unlike extractive summarization, abstractive summarization
-can include new expressions and sentences absent from the original text. This thesis
-presents a comprehensive analysis of abstractive summarization using the salience allocation
+can include new expressions and sentences absent from the original text. This thesis  entitled **“Analysis of Abstractive Summarization Using Salience Allocation”** presents a comprehensive analysis of abstractive summarization using the salience allocation
 technique. The study incorporates a novel summarization model called SEASON. SEASON
 uses the distribution of anticipating relevance to facilitate abstractive text summarization,
 effectively responding to the content with various levels of abstraction.
