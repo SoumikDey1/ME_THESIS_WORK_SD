@@ -42,3 +42,5 @@ involves using beam search, where the beam width is set to 5, applying a length 
 1.5, and implementing 3-gram blocking. We have conducted training for each of the models
 (SEASON, BART, PEGASUS, and ProphetNet) throughout 10 epochs, employing a portion
 of the CNN/Dailymail and SAMSum datasets.
+
+Model-generated summaries and evaluation metric results are available in the output folder.
